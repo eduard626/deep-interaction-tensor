@@ -64,6 +64,8 @@ Alternatively, if you only want to query a single affordance:
 ```
 
 The code will look for all the relevant files under the **data/** directory by default. These files comprised the *training* data, the input scene file and a text file with a few important parameters.
+### Scene data
+We ran experiments on a number of ScanNet scenes, the list of scenes that we have tested can be found in file **scannet_scenes.txt** under the figures directory. In order to get those pointclouds you should follow ScanNet's authors instructions: [https://github.com/ScanNet/ScanNet](https://github.com/ScanNet/ScanNet).
 
 #### parameters.txt
 
