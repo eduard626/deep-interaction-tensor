@@ -1,11 +1,15 @@
 % Cleaner code for agglomerative descriptor 
 % Need training data examples and spindescriptors
 % Which should be under the current dir
-spinfiles=dir('*/*_spinCNN_8.dat');
+% spin and spinvectors -> weight-driven sampling
+% spinU and spinUvectors -> uniform sampling
+% spinCNN and spinCNNvectors -> saliency-based sampling
+spinfiles=dir('*/*_spin_8.dat');
 % Change this to the actual path of your 'matlab_pcl'
+% https://uk.mathworks.com/matlabcentral/fileexchange/40382-matlab-to-point-cloud-library
 addpath('~/Documents/matlab_pcl/')
 
-spinfiles2=dir('*/*_spinCNNvectors_8.dat');
+spinfiles2=dir('*/*_spinvectors_8.dat');
 
 % to stare individual data
 descriptors=cell(size(spinfiles));
