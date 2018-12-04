@@ -66,6 +66,9 @@ Alternatively, if you only want to query a single affordance:
 The code will look for all the relevant files under the **data/** directory by default. These files comprised the *training* data, the input scene file and a text file with a few important parameters.
 ### Scene data
 We ran experiments on a number of ScanNet scenes, the list of scenes that we have tested can be found in file **scannet_scenes.txt** under the figures directory. In order to get those pointclouds you should follow ScanNet's authors instructions: [https://github.com/ScanNet/ScanNet](https://github.com/ScanNet/ScanNet).
+### Affordance data
+If you want to straight away test the code with our object/affordance collection you can get all the interactions tensors, query-object CAD models and auxiliar files here [OneDrive](https://uob-my.sharepoint.com/:f:/g/personal/er13827_bristol_ac_uk/EvMja2LCoplCq_h70tSGG4YB7DPaVIF90gMYk7wYaV1vHA?e=vrK9ox).
+Further below you can find the file structure that the code expects to find in order to read the data.
 
 #### parameters.txt
 
