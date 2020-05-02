@@ -1,19 +1,19 @@
-## What can I do here? Leveraging Deep 3D saliency and geometry for fast and scalable multiple affordance detection
+## Scalable Real-Time and One-Shot Multiple-Affordance Detection
 ![](figures/first_image_scannet.png)
 
-This paper develops and evaluates a novel method that allows for the detection of affordances in a scalable and multiple-instance manner on visually recovered pointclouds. Our approach has many advantages over alternative methods, as it is based on highly parallelizable, one-shot learning that is fast in commodity hardware. The approach is hybrid in that it uses a geometric representation together with a state-of-the-art deep learning method capable of identifying 3D scene saliency. The geometric component allows for a compact and efficient representation, boosting the performance of the deep network architecture which proved insufficient on its own. Moreover, our approach allows not only to predict whether an input scene affords or not the interactions, but also the pose of the objects that allow these interactions to take place. Our predictions align well with crowd-sourced human judgment as they are preferred with 87% probability, show high rates of improvement with almost four times (4x) better performance over a deep learning-only baseline and are seven times (7x) faster than previous art.
-
-You can find the paper [here](https://arxiv.org/abs/1812.00889).
+ This paper develops and evaluates a geometry-driven approach that allows for the detection of affordancesin an scalable and multiple-instance manner. True to Gibson’sidea of directand economical perception, our approach requires little supervision, is straightforward to compute and is agnostic to semantics. The proposed approach is trained with a single interaction example on synthetic data (i.e. simulated), yet is able to generalise to previously unknown RGB-D scenarioswithout further training. Furthermore, our use of geometric information not only allows to detect whata location in theenvironment affords but also how it affords, i.e. object-pose. We show results from several dozens of affordances (80+) predicted simultaneously at high frame rates on indoor environments suchas kitchens and offices. Our evaluations show high rates of precision and that the algorithm’s predictions align well with crowd-sourced human validations.
+ 
+You can find the paper [here](https://r1d1.github.io/iwcmar/papers/RuizM2019.pdf).
 
 ### Citation 
 If you find our work useful in your research, please consider citing:
 
-    @article{ruiz2018deep,
-    title={What can I do here? Leveraging Deep 3D saliency and geometry for fast and scalable multiple affordance detection},
+    @article{ruiz2018scalable,
+    title={Scalable Real-Time and One-Shot Multiple-Affordance Detection},
     author={Ruiz, Eduardo and Mayol-Cuevas, Walterio},
-    journal={arXiv preprint arXiv:2494113},
-
-    year={2018},
+    journal={2nd International Workshop on Computational Models of Affordance in Robotics },
+    note={ICRA},
+    year={2019},
     }
 
 ### Agglomerative descriptor
